@@ -47,10 +47,15 @@ nav {
   color: var(--cor-texto);
 }
 .container {
-  padding: 8rem 2rem 0 2rem;
+  width: 100vw;
+  padding-top: 6%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   flex-direction: row;
+  margin-bottom: 2rem;
+}
+.conteudo{
+  padding: 1rem 3rem 4rem 0;  
 }
 
 h1 {
