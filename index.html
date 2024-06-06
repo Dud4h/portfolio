@@ -1,66 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duda | Portfólio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+        integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
-    <nav>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">
-                <i class='bx bxs-home'></i> Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#habilidades">
-                <i class='bx bx-desktop'></i> Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#projetos"> 
-                <i class='bx bx-heart'></i> Projetos</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class='bx bx-menu'></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">
+                        <i class='bx bxs-home'></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">
+                        <i class='bx bx-desktop'></i> Habilidades
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">
+                        <i class='bx bx-heart'></i> Projetos
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
-</header>
+    </header>
     <main id="home" class="container">
         <div class="conteudo">
             <h1 class="titulo-principal" id="nome-autor"></h1>
-            <span class="resumoBio">eba ebaaa! Sou a Duda e atualmente tô na labuta 
-                de ser dev front-end.Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Duis euismod malesuada ipsum eu ullamcorper. Sed ut urna ullamcorper, finibus 
-                leo nec, rhoncus nunc. Sed bibendum nunc convallis, pretium eros ut, hendrerit 
+            <span class="resumoBio">eba ebaaa! Sou a Duda e atualmente tô na labuta
+                de ser dev front-end. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Duis euismod malesuada ipsum eu ullamcorper. Sed ut urna ullamcorper, finibus
+                leo nec, rhoncus nunc. Sed bibendum nunc convallis, pretium eros ut, hendrerit
                 tellus. Suspendisse quis luctus enim. Donec nec luctus augue, nec pretium dolor.
             </span>
-                <p> iiiih se tiverem mais interesse em mim, tá aqui minhas redes ó:</p>
+            <p class="p"> iiiih se tiverem mais interesse em mim, tá aqui minhas redes ó:</p>
             <div class="botao-container">
                 <a class="redes active" href="#" target="_blank">
-                    <i class='bx bxl-github'></i>GitHub</a>
-            <a class="redes active" href="https://www.linkedin.com/in/dud4h/" target="_blank">
-                <i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    <i class='bx bxl-github' id="icon"></i>GitHub</a>
+                <a class="redes active" href="https://www.linkedin.com/in/dud4h/" target="_blank">
+                    <i class='bx bxl-linkedin' id="icon"></i> LinkedIn</a>
             </div>
         </div>
         <div class="imagemEu">
             <img src="./assets/img/me.jpeg" id="img">
-        </div>    
+        </div>
     </main>
     <section id="habilidades" class="container">
         <div class="conteudo">
             <h2 class="titulo">Minhas <span class="subtitulo">Habilidades</span></h2>
-        <span class="resumoBio">Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac ipsum. 
-            Mauris a libero id velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
-            Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac ipsum. Mauris a libero id 
-            velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
+            <span class="resumoBio" id="resumo-habilidades">Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac
+                ipsum.
+                Mauris a libero id velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
+                Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac ipsum. Mauris a libero id
+                velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
             </span>
+            <span class="resumoBio" id="resumo-habilidades">Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac
+                ipsum.
+                Mauris a libero id velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
+                Vivamus urna nisi, lobortis ut euismod in, sollicitudin ac ipsum. Mauris a libero id
+                velit pulvinar scelerisque at quis magna. Aliquam erat volutpat.
+            </span>
+            <div class="imagem-habilidades">
+                <img src="assets/img/include-4.png" id="imagem-habilidades">
+            </div>
             <div class="botao-container">
                 <a class="redes active" href="#" target="_blank">
-                    <i class='bx bxl-github'></i>Certificados</a>
+                    <i class="bx bx-id-card" id="icon"></i>Certificados</a>
             </div>
+        </div>
+
     </section>
     <section id="projetos" class="container">
         <div class="conteudo-projeto">
@@ -100,14 +124,17 @@
             </div>
         </div>
     </section>
-       <footer class="rodape">
-            <img src="./assets/img/Logo Alura Include.svg" alt="logo alura" class="logo__alura"/>
-            <p class="footer">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="https://www.instagram.com/dud4h.s/" target="_blank" id="rodape">Duda Araujo</a>
-            </p>
-     </footer>
+    <footer class="rodape">
+        <img src="./assets/img/Logo Alura Include.svg" alt="logo alura" class="logo__alura" />
+        <p class="footer">Copyright
+            <script>document.write(new Date().getFullYear())</script> &copy; <a
+                href="https://www.instagram.com/dud4h.s/" target="_blank" id="rodape">Duda Araujo</a>
+        </p>
+    </footer>
     <script src="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
