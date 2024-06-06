@@ -323,8 +323,13 @@ a{
   .conteudo {
     padding: 1rem;
   }
+  #icon{
+    display: flex;
+    flex-direction: column;
+  }
 
   .botao-container {
+    display: flex;
     flex-direction: column;
     height: auto;
   }
